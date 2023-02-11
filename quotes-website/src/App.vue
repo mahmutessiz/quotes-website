@@ -1,7 +1,13 @@
-<script></script>
+<script>
+import HomeView from "./views/HomeView.vue";
+
+export default {
+  components: {
+    HomeView,
+  },
+};
+</script>
 
 <template>
-  <div>
-    <h1 class="font-bold text-center text-2xl">başladım...</h1>
-  </div>
+  <HomeView />
 </template>
