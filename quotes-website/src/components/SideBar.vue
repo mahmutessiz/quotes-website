@@ -10,11 +10,11 @@ export default {
 };
 </script>
 <template>
-  <aside class="bg-lime-300 text-center">
-    <h2 class="py-2 font-bold underline shadow-md bg-amber-500">Categories</h2>
-    <ul
-      class="h-screen flex flex-wrap items-center justify-center overflow-auto"
-    >
+  <aside class="bg-gray-600 text-center pb-9">
+    <h2 class="py-2 font-bold underline shadow-md bg-slate-900 text-white">
+      Categories
+    </h2>
+    <ul class="h-screen flex flex-wrap items-center justify-center">
       <li
         v-for="categori in categoriData.categories"
         :key="categori"
