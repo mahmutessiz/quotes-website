@@ -2,7 +2,7 @@
 
 <template>
   <header
-    class="w-full bg-lime-300 flex justify-between items-center px-4 py-2 shadow-md"
+    class="w-full bg-lime-400 flex justify-between items-center px-4 py-2 shadow-md"
   >
     <div>
       <img
