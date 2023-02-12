@@ -26,7 +26,7 @@
     <nav>
       <ul class="flex gap-4 mr-4">
         <li
-          class="bg-green-400 shadow-md font-bold hover:text-black hover:text-opacity-50 duration-500 p-3 rounded-md cursor-pointer"
+          class="bg-blue-400 shadow-md font-bold hover:text-black hover:text-opacity-50 duration-500 p-3 rounded-md cursor-pointer"
         >
           Contact
         </li>
