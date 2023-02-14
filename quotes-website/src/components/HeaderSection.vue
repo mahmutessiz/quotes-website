@@ -2,7 +2,7 @@
 
 <template>
   <header
-    class="w-full bg-lime-800 flex justify-between items-center px-4 py-2 shadow-md"
+    class="flex w-full items-center justify-around bg-lime-800 px-4 py-2 shadow-md"
   >
     <div>
       <img
@@ -14,19 +14,19 @@
     <div class="flex gap-2">
       <input
         type="text"
-        class="bg-transparent border-black border shadow-md w-60 rounded-lg"
+        class="w-60 rounded-lg border border-black bg-transparent shadow-md"
         placeholder="   Search a person"
-      />
-      <img
-        src="https://picsum.photos/30/30"
-        class="cursor-pointer rounded-lg shadow-lg"
-        alt="search"
       />
     </div>
     <nav>
-      <ul class="flex gap-4 mr-4">
+      <ul class="mr-4 flex gap-4">
         <li
-          class="bg-blue-400 shadow-md font-bold hover:text-black hover:text-opacity-50 duration-500 p-3 rounded-md cursor-pointer"
+          class="cursor-pointer p-3 font-bold duration-500 hover:text-black hover:text-opacity-50"
+        >
+          Home
+        </li>
+        <li
+          class="cursor-pointer rounded-md bg-blue-400 p-3 font-bold shadow-md duration-500 hover:text-black hover:text-opacity-50"
         >
           Contact
         </li>

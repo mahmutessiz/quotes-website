@@ -11,9 +11,9 @@ export default {
 </script>
 <template>
   <aside class="bg-gray-900">
-    <div class="bg-gray-800 text-center pb-9 h-fit">
+    <div class="h-fit bg-gray-800 pb-9 text-center">
       <h2
-        class="py-2 font-bold underline shadow-md bg-green-900 text-white opacity-80"
+        class="bg-green-900 py-2 font-bold text-white underline opacity-80 shadow-md"
       >
         Categories
       </h2>
@@ -21,7 +21,7 @@ export default {
         <li
           v-for="categori in categoriData.categories"
           :key="categori"
-          class="p-4 m-4 h-fit rounded-md shadow-lg bg-lime-500 text-center cursor-pointer even:bg-blue-400 font-bold"
+          class="m-4 h-fit cursor-pointer rounded-md bg-lime-500 p-4 text-center font-bold shadow-lg even:bg-blue-400"
         >
           {{ categori }}
         </li>

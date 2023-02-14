@@ -15,9 +15,9 @@ export default {
 </script>
 
 <template>
-  <HeaderSection class="z-10 sticky top-0" />
+  <HeaderSection class="sticky top-0 z-10" />
   <div class="flex w-full">
-    <SideBar class="shadow-lg w-1/4" />
+    <SideBar class="w-1/4 shadow-lg" />
     <MainSection />
   </div>
   <FooterSection />
