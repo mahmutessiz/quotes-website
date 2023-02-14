@@ -2,7 +2,7 @@
 
 <template>
   <header
-    class="w-full bg-lime-400 flex justify-between items-center px-4 py-2 shadow-md"
+    class="w-full bg-lime-800 flex justify-between items-center px-4 py-2 shadow-md"
   >
     <div>
       <img
@@ -14,12 +14,12 @@
     <div class="flex gap-2">
       <input
         type="text"
-        class="bg-white w-full rounded-sm shadow-sm"
-        placeholder="   Search"
+        class="bg-transparent border-black border shadow-md w-60 rounded-lg"
+        placeholder="   Search a person"
       />
       <img
         src="https://picsum.photos/30/30"
-        class="cursor-pointer rounded-sm shadow-sm"
+        class="cursor-pointer rounded-lg shadow-lg"
         alt="search"
       />
     </div>
