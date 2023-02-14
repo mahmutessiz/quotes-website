@@ -14,7 +14,7 @@ export default {
     <h2 class="py-2 font-bold underline shadow-md bg-slate-900 text-white">
       Categories
     </h2>
-    <ul class="h-screen flex flex-wrap items-center justify-center">
+    <ul class="flex flex-wrap items-center justify-center">
       <li
         v-for="categori in categoriData.categories"
         :key="categori"
