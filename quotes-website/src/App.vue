@@ -1,13 +1,22 @@
 <script>
-import HomeView from "./views/HomeView.vue";
+import { RouterView } from "vue-router";
+
+import HeaderSection from "@/components/HeaderSection.vue";
+import FooterSection from "@/components/FooteSection.vue";
 
 export default {
   components: {
-    HomeView,
+    HeaderSection,
+    FooterSection,
+    RouterView,
   },
 };
 </script>
 
 <template>
-  <HomeView />
+  <HeaderSection class="sticky top-0 z-10" />
+
+  <RouterView />
+
+  <FooterSection />
 </template>

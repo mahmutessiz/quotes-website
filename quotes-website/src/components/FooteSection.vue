@@ -1,6 +1,6 @@
 <script></script>
 <template>
-  <div class="p-4 w-full bg-lime-800 grid place-content-center">
+  <div class="grid w-full place-content-center bg-lime-800 p-4">
     Mahmut Eşsiz &copy;2023
   </div>
 </template>

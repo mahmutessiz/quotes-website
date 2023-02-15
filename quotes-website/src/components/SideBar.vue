@@ -1,10 +1,12 @@
 <script>
 import categoriData from "../data/categories.json";
+import { RouterLink } from "vue-router";
 
 export default {
   data() {
     return {
       categoriData: categoriData,
+      RouterLink,
     };
   },
 };
@@ -23,7 +25,7 @@ export default {
           :key="categori"
           class="m-4 h-fit cursor-pointer rounded-md bg-lime-500 p-4 text-center font-bold shadow-lg even:bg-blue-400"
         >
-          {{ categori }}
+          <RouterLink :to="`/category/${categori}`"> {{ categori }}</RouterLink>
         </li>
       </ul>
     </div>
