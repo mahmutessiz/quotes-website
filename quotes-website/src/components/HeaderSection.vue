@@ -15,27 +15,35 @@ export default {
   >
     <div>
       <img
-        src="https://picsum.photos/100/50"
+        src="https://picsum.photos/200/60"
         alt="logo"
         class="cursor-pointer"
-      />
-    </div>
-    <div class="flex gap-2">
-      <input
-        type="text"
-        class="w-60 rounded-lg border border-black bg-transparent shadow-md"
-        placeholder="   Search a person"
       />
     </div>
     <nav>
       <ul class="mr-4 flex gap-4">
         <RouterLink to="/"
           ><li
-            class="cursor-pointer p-3 font-bold duration-500 hover:text-black hover:text-opacity-50"
+            class="cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50"
           >
             Home
           </li></RouterLink
         >
+        <li
+          class="cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50"
+        >
+          Github
+        </li>
+        <li
+          class="cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50"
+        >
+          Linkedin
+        </li>
+        <li
+          class="cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50"
+        >
+          Portfolio
+        </li>
         <li
           class="cursor-pointer rounded-md bg-blue-400 p-3 font-bold shadow-md duration-500 hover:text-black hover:text-opacity-50"
         >
