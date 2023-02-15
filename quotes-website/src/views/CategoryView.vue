@@ -1,5 +1,4 @@
 <script>
-import { findProp } from "@vue/compiler-core";
 import { useRoute } from "vue-router";
 import CategoryData from "../data/categories.json";
 import CategoryQuotes from "../data/categoryQuotes.json";
@@ -13,8 +12,19 @@ export default {
   },
   beforeMount() {
     const path = useRoute().params.id;
+
     if (path == "Inspiration") {
       this.categoryQuotes = CategoryQuotes.Inspiration;
+    } else if (path == "Motivation") {
+      this.categoryQuotes = CategoryQuotes.Motivation;
+    } else if (path == "Love") {
+      this.categoryQuotes = CategoryQuotes.Love;
+    } else if (path == "Life") {
+      this.categoryQuotes = CategoryQuotes.Life;
+    } else if (path == "Success") {
+      this.categoryQuotes = CategoryQuotes.Success;
+    } else if (path == "Wisdom") {
+      this.categoryQuotes = CategoryQuotes.Wisdom;
     }
 
     console.log(path);

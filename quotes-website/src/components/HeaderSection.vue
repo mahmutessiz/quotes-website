@@ -1,4 +1,13 @@
-<script></script>
+<script>
+import { RouterLink } from "vue-router";
+export default {
+  data() {
+    return {
+      RouterLink,
+    };
+  },
+};
+</script>
 
 <template>
   <header
@@ -20,11 +29,13 @@
     </div>
     <nav>
       <ul class="mr-4 flex gap-4">
-        <li
-          class="cursor-pointer p-3 font-bold duration-500 hover:text-black hover:text-opacity-50"
+        <RouterLink to="/"
+          ><li
+            class="cursor-pointer p-3 font-bold duration-500 hover:text-black hover:text-opacity-50"
+          >
+            Home
+          </li></RouterLink
         >
-          Home
-        </li>
         <li
           class="cursor-pointer rounded-md bg-blue-400 p-3 font-bold shadow-md duration-500 hover:text-black hover:text-opacity-50"
         >
