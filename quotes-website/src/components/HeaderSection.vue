@@ -15,9 +15,9 @@ export default {
   >
     <div>
       <img
-        src="https://picsum.photos/200/60"
+        src="../assets/3872631364_create_a_logo_for_quotes_website.png"
         alt="logo"
-        class="cursor-pointer"
+        class="cursor-pointer drop-shadow-2xl"
       />
     </div>
     <nav>

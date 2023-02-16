@@ -9,6 +9,8 @@ export default {
       sunTzu: SunTzu,
       i: 0,
       j: 10,
+      x: 0,
+      y: 10,
     };
   },
   methods: {
@@ -20,6 +22,14 @@ export default {
       this.i = 0;
       this.j = 10;
     },
+    spliceParamFuncPrevSun() {
+      this.x = 0;
+      this.y = 10;
+    },
+    spliceParamFuncNextSun() {
+      this.x = 10;
+      this.y = 20;
+    },
   },
   computed: {
     theBestQuotesSplice() {
@@ -27,7 +37,7 @@ export default {
       return splicedArray;
     },
     sunTzuSplice() {
-      let splicedArray = this.sunTzu.slice(this.i, this.j);
+      let splicedArray = this.sunTzu.slice(this.x, this.y);
       return splicedArray;
     },
   },
@@ -35,7 +45,9 @@ export default {
 </script>
 <template>
   <main class="flex w-full flex-col items-center bg-gray-900 px-4 py-9">
-    <div class="flex w-fit flex-wrap justify-center gap-4">
+    <div
+      class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
+    >
       <h2
         class="w-full text-center text-2xl font-bold text-white underline underline-offset-8 opacity-80"
       >
@@ -69,7 +81,9 @@ export default {
     <hr />
     <br /><br />
 
-    <div class="flex w-fit flex-wrap justify-center gap-4">
+    <div
+      class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
+    >
       <h2
         class="w-full text-center text-2xl font-bold text-white underline underline-offset-8 opacity-80"
       >
@@ -85,13 +99,13 @@ export default {
       <div class="mt-9 flex w-full justify-around bg-slate-700 px-9">
         <button
           class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncPrev"
+          @click="spliceParamFuncPrevSun"
         >
           Prev
         </button>
         <button
           class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncNext"
+          @click="spliceParamFuncNextSun"
         >
           Next
         </button>
