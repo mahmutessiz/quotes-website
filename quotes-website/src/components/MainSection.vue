@@ -11,24 +11,30 @@ export default {
       j: 10,
       x: 0,
       y: 10,
+      pageNumber: 1,
+      pageNumberSun: 1,
     };
   },
   methods: {
     spliceParamFuncNext() {
       this.i = 10;
       this.j = 20;
+      this.pageNumber = 2;
     },
     spliceParamFuncPrev() {
       this.i = 0;
       this.j = 10;
+      this.pageNumber = 1;
     },
     spliceParamFuncPrevSun() {
       this.x = 0;
       this.y = 10;
+      this.pageNumberSun = 1;
     },
     spliceParamFuncNextSun() {
       this.x = 10;
       this.y = 20;
+      this.pageNumberSun = 2;
     },
   },
   computed: {
@@ -69,6 +75,7 @@ export default {
         >
           Prev
         </button>
+        <p class="text-gray-300 underline">{{ pageNumber }}</p>
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncNext"
@@ -103,6 +110,7 @@ export default {
         >
           Prev
         </button>
+        <p class="text-gray-300 underline">{{ pageNumberSun }}</p>
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncNextSun"

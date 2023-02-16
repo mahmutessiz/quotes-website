@@ -14,11 +14,12 @@ export default {
     class="flex w-full items-center justify-around bg-lime-800 px-4 py-2 shadow-md"
   >
     <div>
-      <img
-        src="../assets/3872631364_create_a_logo_for_quotes_website.png"
-        alt="logo"
-        class="cursor-pointer drop-shadow-2xl"
-      />
+      <router-link to="/"
+        ><img
+          src="../assets/3872631364_create_a_logo_for_quotes_website.png"
+          alt="logo"
+          class="cursor-pointer drop-shadow-2xl"
+      /></router-link>
     </div>
     <nav>
       <ul class="mr-4 flex gap-4">
