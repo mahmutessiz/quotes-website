@@ -23,9 +23,14 @@ const router = createRouter({
       component: () => import("../views/CategoryView.vue"),
     },
     {
+      path: "/category/",
+      name: "categori",
+      component: () => import("../views/CategoryView.vue"),
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "notFound",
-      component: () => import("../views/CategoryView.vue"),
+      component: () => import("../views/NotFoundView.vue"),
     },
   ],
   scrollBehavior() {

@@ -2,6 +2,7 @@
 import { useRoute } from "vue-router";
 import CategoryData from "../data/categories.json";
 import CategoryQuotes from "../data/categoryQuotes.json";
+import NotFoundView from "./NotFoundView.vue";
 export default {
   data() {
     return {
@@ -13,9 +14,7 @@ export default {
   beforeMount() {
     /* parameter name detection */
     const path = useRoute().params.id;
-
     /* I'm not proud for this */
-
     if (path == "Inspiration") {
       this.categoryQuotes = CategoryQuotes.Inspiration;
     } else if (path == "Motivation") {
@@ -57,7 +56,6 @@ export default {
     } else if (path == "Courage") {
       this.categoryQuotes = CategoryQuotes.Courage;
     }
-
     /* console.log(path); */
     return (this.pathData = path);
   },
@@ -66,6 +64,7 @@ export default {
       return this.categoryData.categories.includes(this.pathData);
     },
   },
+  components: { NotFoundView },
 };
 </script>
 
@@ -91,6 +90,6 @@ export default {
   </div>
 
   <div v-else class="grid min-h-screen place-items-center">
-    <h2>page not found</h2>
+    <NotFoundView />
   </div>
 </template>
