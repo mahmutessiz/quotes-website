@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="flex w-full">
-    <SideBar class="w-1/4 shadow-lg" />
+    <SideBar class="hidden w-1/4 shadow-lg md:flex" />
     <MainSection />
   </div>
 </template>

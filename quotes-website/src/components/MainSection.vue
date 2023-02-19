@@ -98,7 +98,7 @@ export default {
       <div
         class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
       >
-        <p>
+        <p class="text-sm sm:text-xl">
           A journey of a thousand miles, <br />
           begins with a single step. <br />
           &ldquo; Sun Tzu &rdquo;
@@ -108,7 +108,6 @@ export default {
       <img
         class="opacity-70"
         src="../assets/sunTzubg.png"
-        loading="lazy"
         alt="background image far east"
       />
     </div>
@@ -154,7 +153,7 @@ export default {
         <div
           class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
         >
-          <p>
+          <p class="text-sm sm:text-xl">
             A journey of a thousand miles, <br />
             begins with a single step. <br />
             &ldquo; Sun Tzu &rdquo;
@@ -164,7 +163,6 @@ export default {
         <img
           class="opacity-70"
           src="../assets/sunTzubg.png"
-          loading="lazy"
           alt="background image far east"
         />
       </div>
