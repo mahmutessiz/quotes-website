@@ -80,7 +80,7 @@ export default {
     </h2>
     <ul class="flex flex-wrap justify-center gap-4 p-4">
       <li
-        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center font-mono md:font-sans md:font-bold shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-red-800 odd:to-red-400 even:bg-gradient-to-tr even:from-slate-800 even:to-slate-400 hover:scale-110"
+        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center font-mono shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-red-800 odd:to-red-400 even:bg-gradient-to-tr even:from-slate-800 even:to-slate-400 hover:scale-110 md:font-sans md:font-bold"
         v-for="categoryQuote in categoryQuotes"
         :key="categoryQuote"
       >
