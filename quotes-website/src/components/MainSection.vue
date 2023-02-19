@@ -51,6 +51,7 @@ export default {
 </script>
 <template>
   <main class="flex w-full flex-col items-center bg-gray-900 px-4 py-9">
+    <!-- The best quotes section -->
     <div
       class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
     >
@@ -68,14 +69,15 @@ export default {
 
         <li class="font-mono italic">{{ bestQuote.author }}</li>
       </ul>
-      <div class="mt-9 flex w-full justify-around bg-slate-700 px-9">
+
+      <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">
+        <p class="text-gray-300">page: {{ pageNumber }}</p>
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncPrev"
         >
           Prev
         </button>
-        <p class="text-gray-300 underline">{{ pageNumber }}</p>
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncNext"
@@ -88,6 +90,30 @@ export default {
     <hr />
     <br /><br />
 
+    <!-- quote with bg-image -->
+
+    <div
+      class="relative mb-9 grid w-full place-items-center shadow-md shadow-slate-600"
+    >
+      <div
+        class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
+      >
+        <p>
+          A journey of a thousand miles, <br />
+          begins with a single step. <br />
+          &ldquo; Sun Tzu &rdquo;
+        </p>
+      </div>
+
+      <img
+        class="opacity-70"
+        src="../assets/sunTzubg.png"
+        loading="lazy"
+        alt="background image far east"
+      />
+    </div>
+
+    <!-- Sun Tzu quotes -->
     <div
       class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
     >
@@ -103,20 +129,44 @@ export default {
       >
         <li class="font-bold">&ldquo; {{ sun.quote }} &rdquo;</li>
       </ul>
-      <div class="mt-9 flex w-full justify-around bg-slate-700 px-9">
+
+      <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">
+        <p class="text-gray-300">page: {{ pageNumberSun }}</p>
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncPrevSun"
         >
           Prev
         </button>
-        <p class="text-gray-300 underline">{{ pageNumberSun }}</p>
+
         <button
           class="cursor-pointer text-lg font-bold text-white"
           @click="spliceParamFuncNextSun"
         >
           Next
         </button>
+      </div>
+
+      <!-- quote with bg-image -->
+      <div
+        class="relative mb-9 grid w-full place-items-center shadow-md shadow-slate-600"
+      >
+        <div
+          class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
+        >
+          <p>
+            A journey of a thousand miles, <br />
+            begins with a single step. <br />
+            &ldquo; Sun Tzu &rdquo;
+          </p>
+        </div>
+
+        <img
+          class="opacity-70"
+          src="../assets/sunTzubg.png"
+          loading="lazy"
+          alt="background image far east"
+        />
       </div>
     </div>
   </main>

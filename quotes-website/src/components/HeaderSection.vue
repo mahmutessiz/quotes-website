@@ -11,7 +11,7 @@ export default {
 
 <template>
   <header
-    class="flex w-full items-center justify-around bg-lime-800 px-4 py-2 shadow-md"
+    class="z-20 flex w-full items-center justify-around bg-lime-800 px-4 py-2 shadow-md"
   >
     <div>
       <router-link to="/"
