@@ -36,12 +36,11 @@ export default {
       this.y = 20;
       this.pageNumberSun = 2;
     },
-    coppyToClipboard(event) {
+    copyToClipboard(event) {
       // Copy the text inside the text field
-      navigator.clipboard.writeText(event.target.innerHTML);
-      // Alert the copied text
-      console.log("Copied the text: " + event.target.innerHTML);
+      navigator.clipboard.writeText(event.target.innerText);
 
+      // Alert the copied text
       const alertContainer = document.querySelector("#alert-copy");
       alertContainer.classList.add("grid");
       alertContainer.classList.remove("hidden");
@@ -78,11 +77,12 @@ export default {
         class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110"
         v-for="bestQuote in theBestQuotesSplice"
         :key="bestQuote"
-        @click="coppyToClipboard"
       >
-        <li class="font-bold">&ldquo; {{ bestQuote.quote }} &rdquo;</li>
-
-        <li class="font-mono italic">{{ bestQuote.author }}</li>
+        <li class="font-bold" @click.prevent="copyToClipboard">
+          &ldquo; {{ bestQuote.quote }} &rdquo; <br />
+          <br />
+          <p class="font-mono font-thin italic">{{ bestQuote.author }}</p>
+        </li>
       </ul>
 
       <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">
@@ -140,9 +140,10 @@ export default {
         class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110"
         v-for="sun in sunTzuSplice"
         :key="sun"
-        @click="coppyToClipboard"
       >
-        <li class="font-bold">&ldquo; {{ sun.quote }} &rdquo;</li>
+        <li class="font-bold" @click.prevent="copyToClipboard">
+          &ldquo; {{ sun.quote }} &rdquo;
+        </li>
       </ul>
 
       <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">

@@ -63,8 +63,6 @@ export default {
     coppyToClipboard(event) {
       // Copy the text inside the text field
       navigator.clipboard.writeText(event.target.innerHTML);
-      // Alert the copied text
-      console.log("Copied the text: " + event.target.innerHTML);
 
       // alert box for copy
       const alertContainer = document.querySelector("#alert-copy");
@@ -111,11 +109,11 @@ export default {
     <NotFoundView />
   </div>
   <div
-      id="alert-copy"
-      class="fixed bottom-8 right-9 hidden w-1/2 place-items-center rounded-md bg-blue-900 py-4 px-2 transition-all duration-500"
-    >
-      <p class="text-center font-semibold text-white">
-        The quote copied to clipboard
-      </p>
-    </div>
+    id="alert-copy"
+    class="fixed bottom-8 right-9 hidden w-1/2 place-items-center rounded-md bg-blue-900 py-4 px-2 transition-all duration-500"
+  >
+    <p class="text-center font-semibold text-white">
+      The quote copied to clipboard
+    </p>
+  </div>
 </template>
