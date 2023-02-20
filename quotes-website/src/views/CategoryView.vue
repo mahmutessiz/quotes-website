@@ -59,6 +59,14 @@ export default {
     /* console.log(path); */
     return (this.pathData = path);
   },
+  methods: {
+    coppyToClipboard(event) {
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(event.target.innerHTML);
+      // Alert the copied text
+      console.log("Copied the text: " + event.target.innerHTML);
+    },
+  },
   computed: {
     machesData() {
       return this.categoryData.categories.includes(this.pathData);
@@ -80,9 +88,10 @@ export default {
     </h2>
     <ul class="flex flex-wrap justify-center gap-4 p-4">
       <li
-        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center font-mono shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110 md:font-sans md:font-bold"
+        class="deneme flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center font-mono shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110 md:font-sans md:font-bold"
         v-for="categoryQuote in categoryQuotes"
         :key="categoryQuote"
+        @click="coppyToClipboard"
       >
         {{ categoryQuote }}
       </li>
