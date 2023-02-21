@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div class="grid justify-center bg-gray-800">
+  <div class="grid min-h-screen justify-center bg-gray-800">
     <div class="h-fit max-w-lg bg-gray-800 pb-9 text-center">
       <ul class="flex flex-wrap items-center justify-center">
         <li

@@ -110,7 +110,7 @@ export default {
   </div>
   <div
     id="alert-copy"
-    class="fixed bottom-8 right-9 hidden w-1/2 place-items-center rounded-md bg-blue-900 py-4 px-2 transition-all duration-500"
+    class="fixed bottom-8 hidden w-1/2 place-items-center rounded-md bg-blue-900 py-4 px-2 transition-all duration-500 sm:bottom-8 sm:right-9"
   >
     <p class="text-center font-semibold text-white">
       The quote copied to clipboard
