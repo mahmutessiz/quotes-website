@@ -40,22 +40,28 @@ export default {
         <li
           class="hidden cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50 md:block"
         >
-          Github
+          <a href="https://github.com/mahmutessiz" target="_blank">Github</a>
         </li>
         <li
           class="hidden cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50 md:block"
         >
-          Linkedin
+          <a
+            href="https://www.linkedin.com/in/mahmut-e%C5%9Fsiz-b1b8a8185/"
+            target="_blank"
+            >Linkedin</a
+          >
         </li>
         <li
           class="hidden cursor-pointer p-3 font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50 md:block"
         >
-          Portfolio
+          <a href="https://mahmutessiz-portfolio.vercel.app/" target="_blank"
+            >Portfolio</a
+          >
         </li>
         <li
           class="cursor-pointer rounded-md bg-blue-400 p-3 text-sm font-bold shadow-md duration-500 hover:text-black hover:text-opacity-50 sm:text-base"
         >
-          Contact
+          <a href="mailto:mahmutessiz71@gmail.com">Contact</a>
         </li>
       </ul>
     </nav>
