@@ -25,7 +25,7 @@ export default {
       <ul class="mr-4 flex gap-4">
         <RouterLink to="/"
           ><li
-            class="cursor-pointer p-3 text-sm font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50 sm:text-base"
+            class="cursor-pointer p-3 text-sm font-bold text-neutral-50 duration-500 hover:text-neutral-100 hover:text-opacity-50 active:text-white sm:text-base"
           >
             Home
           </li></RouterLink
