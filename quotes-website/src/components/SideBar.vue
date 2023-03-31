@@ -12,18 +12,16 @@ export default {
 };
 </script>
 <template>
-  <aside class="bg-gray-900">
-    <div class="h-fit bg-gray-800 pb-9 text-center">
-      <h2
-        class="bg-green-900 py-2 font-bold text-white underline opacity-80 shadow-md"
-      >
+  <aside class="bg-slate-100">
+    <div class="h-fit bg-rose-700 text-center shadow-md shadow-black/10">
+      <h2 class="bg-rose-900 py-2 font-bold text-zinc-100 underline shadow-md">
         Categories
       </h2>
       <ul class="flex flex-wrap items-center justify-center">
         <li
           v-for="categori in categoriData.categories"
           :key="categori"
-          class="m-4 h-fit cursor-pointer rounded-md bg-lime-500 p-4 text-center font-bold shadow-lg even:bg-blue-400"
+          class="h-fit w-full cursor-pointer rounded-sm border-r-2 border-b border-black/50 bg-zinc-100 p-4 text-center font-bold duration-200 even:bg-zinc-200/80 even:text-black hover:scale-95"
         >
           <RouterLink :to="`/category/${categori}`"> {{ categori }}</RouterLink>
         </li>

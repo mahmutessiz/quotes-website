@@ -63,18 +63,18 @@ export default {
 };
 </script>
 <template>
-  <main class="flex w-full flex-col items-center bg-gray-900 px-4 py-9">
+  <main class="flex w-full flex-col items-center bg-zinc-100 px-4 py-9">
     <!-- The best quotes section -->
     <div
       class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
     >
       <h2
-        class="w-full text-center text-2xl font-bold text-white underline underline-offset-8 opacity-80"
+        class="w-full text-center text-2xl font-bold underline underline-offset-8 opacity-80"
       >
         The Best Quotes
       </h2>
       <ul
-        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110"
+        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-300 odd:bg-gradient-to-tl odd:from-zinc-50 odd:to-zinc-300 even:bg-gradient-to-tr even:from-gray-900 even:to-black even:text-zinc-200/90 hover:scale-105"
         v-for="bestQuote in theBestQuotesSplice"
         :key="bestQuote"
       >
@@ -111,9 +111,9 @@ export default {
       class="relative mb-9 grid w-full place-items-center shadow-md shadow-slate-600"
     >
       <div
-        class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
+        class="absolute z-10 grid h-full w-full place-items-center bg-opacity-20 text-center font-mono backdrop-blur-sm"
       >
-        <p class="text-sm sm:text-xl">
+        <p class="text-sm font-bold text-black sm:text-2xl">
           A journey of a thousand miles, <br />
           begins with a single step. <br />
           &ldquo; Sun Tzu &rdquo;
@@ -132,12 +132,12 @@ export default {
       class="flex w-fit flex-wrap justify-center gap-4 transition-all duration-500"
     >
       <h2
-        class="w-full text-center text-2xl font-bold text-white underline underline-offset-8 opacity-80"
+        class="w-full text-center text-2xl font-bold underline underline-offset-8 opacity-80"
       >
         Sun Tzu Quotes
       </h2>
       <ul
-        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-500 odd:bg-gradient-to-tl odd:from-green-800 odd:to-green-400 even:bg-gradient-to-tr even:from-blue-800 even:to-blue-400 hover:scale-110"
+        class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-300 odd:bg-gradient-to-tl odd:from-zinc-50 odd:to-zinc-300 even:bg-gradient-to-tr even:from-gray-900 even:to-black even:text-zinc-200/90 hover:scale-105"
         v-for="sun in sunTzuSplice"
         :key="sun"
       >
@@ -168,9 +168,9 @@ export default {
         class="relative mb-9 grid w-full place-items-center shadow-md shadow-slate-600"
       >
         <div
-          class="absolute z-10 grid h-full w-full place-items-center bg-slate-800 bg-opacity-20 text-center font-mono text-xl font-bold text-white backdrop-blur-sm"
+          class="absolute z-10 grid h-full w-full place-items-center bg-opacity-20 text-center font-mono backdrop-blur-sm"
         >
-          <p class="text-sm sm:text-xl">
+          <p class="text-sm font-bold text-black sm:text-2xl">
             A journey of a thousand miles, <br />
             begins with a single step. <br />
             &ldquo; Sun Tzu &rdquo;
