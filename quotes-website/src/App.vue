@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <HeaderSection class="sticky -top-1 z-10" />
+  <HeaderSection class="sticky -top-1 z-10 sm:static" />
 
   <RouterView />
 
