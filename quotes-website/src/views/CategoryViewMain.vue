@@ -19,7 +19,7 @@ export default {
         <li
           v-for="categori in categoriData.categories"
           :key="categori"
-          class="m-4 h-fit cursor-pointer rounded-md bg-lime-500 p-4 text-center font-bold shadow-lg even:bg-blue-400"
+          class="h-fit w-full cursor-pointer rounded-sm border-r-2 border-b border-black/50 bg-zinc-100 p-4 text-center font-bold duration-200 even:bg-zinc-200/80 even:text-black hover:scale-95"
         >
           <RouterLink :to="`/category/${categori}`"> {{ categori }}</RouterLink>
         </li>
