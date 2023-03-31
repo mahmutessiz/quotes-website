@@ -73,6 +73,15 @@ export default {
       >
         The Best Quotes
       </h2>
+      <div class="mt-9 flex w-full justify-end gap-4 bg-zinc-100 px-9">
+        <p class="text-gray-700">page: {{ pageNumber }}</p>
+        <button class="cursor-pointer text-black" @click="spliceParamFuncPrev">
+          Prev
+        </button>
+        <button class="cursor-pointer text-black" @click="spliceParamFuncNext">
+          Next
+        </button>
+      </div>
       <ul
         class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-300 odd:bg-gradient-to-tl odd:from-zinc-50 odd:to-zinc-300 even:bg-gradient-to-tr even:from-gray-900 even:to-black even:text-zinc-200/90 hover:scale-105"
         v-for="bestQuote in theBestQuotesSplice"
@@ -84,25 +93,8 @@ export default {
           <p class="font-mono font-thin italic">{{ bestQuote.author }}</p>
         </li>
       </ul>
-
-      <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">
-        <p class="text-gray-300">page: {{ pageNumber }}</p>
-        <button
-          class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncPrev"
-        >
-          Prev
-        </button>
-        <button
-          class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncNext"
-        >
-          Next
-        </button>
-      </div>
     </div>
     <br />
-    <hr />
     <br /><br />
 
     <!-- quote with bg-image -->
@@ -136,6 +128,22 @@ export default {
       >
         Sun Tzu Quotes
       </h2>
+      <div class="mt-9 flex w-full justify-end gap-4 bg-zinc-100 px-9">
+        <p class="text-gray-900">page: {{ pageNumberSun }}</p>
+        <button
+          class="cursor-pointer text-black"
+          @click="spliceParamFuncPrevSun"
+        >
+          Prev
+        </button>
+
+        <button
+          class="cursor-pointer text-black"
+          @click="spliceParamFuncNextSun"
+        >
+          Next
+        </button>
+      </div>
       <ul
         class="flex w-60 flex-col items-center justify-center gap-4 rounded-lg px-9 py-9 text-center shadow-md shadow-slate-700 transition-all duration-300 odd:bg-gradient-to-tl odd:from-zinc-50 odd:to-zinc-300 even:bg-gradient-to-tr even:from-gray-900 even:to-black even:text-zinc-200/90 hover:scale-105"
         v-for="sun in sunTzuSplice"
@@ -145,23 +153,6 @@ export default {
           &ldquo; {{ sun.quote }} &rdquo;
         </li>
       </ul>
-
-      <div class="mt-9 flex w-full justify-end gap-4 bg-slate-900 px-9">
-        <p class="text-gray-300">page: {{ pageNumberSun }}</p>
-        <button
-          class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncPrevSun"
-        >
-          Prev
-        </button>
-
-        <button
-          class="cursor-pointer text-lg font-bold text-white"
-          @click="spliceParamFuncNextSun"
-        >
-          Next
-        </button>
-      </div>
 
       <!-- quote with bg-image -->
       <div
