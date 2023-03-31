@@ -74,10 +74,10 @@ export default {
         The Best Quotes
       </h2>
       <div class="mt-9 flex w-full justify-end gap-4 bg-zinc-100 px-9">
-        <p class="text-gray-700">page: {{ pageNumber }}</p>
         <button class="cursor-pointer text-black" @click="spliceParamFuncPrev">
           Prev
         </button>
+        <p class="text-sm text-gray-500">{{ pageNumber }}</p>
         <button class="cursor-pointer text-black" @click="spliceParamFuncNext">
           Next
         </button>
@@ -129,13 +129,13 @@ export default {
         Sun Tzu Quotes
       </h2>
       <div class="mt-9 flex w-full justify-end gap-4 bg-zinc-100 px-9">
-        <p class="text-gray-900">page: {{ pageNumberSun }}</p>
         <button
           class="cursor-pointer text-black"
           @click="spliceParamFuncPrevSun"
         >
           Prev
         </button>
+        <p class="text-gray-500">{{ pageNumberSun }}</p>
 
         <button
           class="cursor-pointer text-black"
