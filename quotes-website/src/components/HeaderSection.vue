@@ -46,9 +46,7 @@ export default {
         <li
           class="hidden cursor-pointer border-r p-3 font-bold duration-300 hover:text-zinc-400 md:block"
         >
-          <a href="https://mahmutessiz-portfolio.vercel.app/" target="_blank"
-            >Portfolio</a
-          >
+          <a href="https://mahmutessiz.dev/" target="_blank">Portfolio</a>
         </li>
         <li
           class="cursor-pointer rounded-md bg-rose-900 p-3 text-sm font-bold text-white shadow-md duration-500 hover:text-opacity-80 sm:text-base"
